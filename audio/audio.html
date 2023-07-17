@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Audio de fondo</title>
+</head>
+<style>
+    button {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+		background-color: #66dacc;
+    	border: none;
+		padding: 10px 20px;
+		text-align: center;
+		font-size: 32px;
+		cursor: pointer;
+        border-end-end-radius: 40px;
+    }
+</style>
+<body>
+    <audio id="miAudio" loop>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="btnPlayPause">Reproducir</button>
+
+    <script>
+        window.onload = function() {
+            const audioElement = document.getElementById("miAudio");
+            const btnPlayPause = document.getElementById("btnPlayPause");
+
+            // I put this function to change the button when detect click
+            btnPlayPause.addEventListener("click", function() {
+                if (audioElement.paused) {
+                    audioElement.play();
+                    btnPlayPause.textContent = "Pausar";
+                } else {
+                    audioElement.pause();
+                    btnPlayPause.textContent = "Reproducir";
+                }
+            });
+        };
+    </script>
+</body>
+</html>
+

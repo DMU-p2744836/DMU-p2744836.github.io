@@ -1,0 +1,100 @@
+/* css for index */
+.main1{
+    position: absolute; /* If position = absoluto we can move anywhere in the window */
+    top: 15%; /*  This is the space between the css and the top of the window*/
+    left: 30%; /* And this the space of the left part of the window*/
+}
+.footer{
+    position: absolute;
+    background-color: bisque; /* Background color*/
+    width: 100%;
+    top: 90%;
+}
+
+
+
+/* css for choose players */
+.player1{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+.player2{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+.player3{
+    position: absolute;
+    top: 25%;
+    left: 55%;
+}
+
+
+
+/* css for teams */
+.lions_team{
+    position: absolute;
+    background-color: aliceblue;
+    padding: 20px 20px;
+    top: 25%;
+    left: 3%;
+}
+.petrolero_team{
+    position: absolute;
+    background-color: antiquewhite;
+    padding: 20px 20px;
+    top: 25%;
+    left: 32%;
+}
+.ahli_team{
+    position: absolute;
+    background-color: aqua;
+    padding: 20px 20px;
+    top: 25%;
+    left: 65%;
+}
+
+.teams{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+/* css for skills */
+.goalkeeper{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.intelligent{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.striker{
+    position: absolute;
+    top: 30%;
+    left: 75%;
+}
+
+.button1{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+.button2{
+    position: absolute;
+    top: 45%;
+    left: 65%;
+}
+.coach_button1{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.coach_button2{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
