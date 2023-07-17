@@ -6,6 +6,7 @@
 }
 .footer{
     position: absolute;
+    font-weight: bolder;
     background-color: bisque; /* Background color*/
     width: 100%;
     top: 90%;
