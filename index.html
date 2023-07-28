@@ -23,21 +23,52 @@
 	  }
   </style>
   <body>
-	<h1>Football stars</h1>
+	<header>
+
+		<!-- He insertado todo este header en cada archivo
+		para tener un menu desplegable con utilidades dentro de la pagina web -->
+		<nav>
+			<h1>Football stars</h1>
+		 
+			<ul>
+			  <li class="dropdown">
+				<!-- Estas son las tres barras de menu-->
+				<span class="menubar" onclick="openMenu()">
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				</span>
+				<!-- Cuando pulses las tres barras el menu se abrira y aparecera esto -->
+				<ul class="menu show" id="menu">
+				  <li><a style="font-size: 30px;" onclick="closeMenu()">x</a></li><br>
+				  <li><a href="html/players.html" onclick="closeMenu()">PLAYERS</a></li><br>
+				  <li><a href="html/teams.html" onclick="closeMenu()">TEAMS</a></li><br>
+				  <li><a href="https://github.com/DMU-p2744836/PACOS-WORK" onclick="closeMenu()">MY WORK</a></li><br>
+				</ul>
+			  </li>
+			</ul>
+		</nav>
+
+	  </header>
 	<br><br>
+	<!-- este boton abre una ventana nueva con un pulsador para iniciar el audio -->
 	<button style="margin-left: 80%; font-size: 18px;" onclick="abrirVentanaAudio()">Open audio</button>
 	<div class="main1">
 		<img src="img/balon.jpg">
 		<br><br>
-		<button type="button"><a href="html/players.html">START GAME</a></button>
+		<button  type="button"><a href="html/players.html">START GAME</a></button>
 	</div>
 	
-	<div class="footer">
+	<div class="footer" id="footer">
 		<footer>
 		<p>&copy; 2023 Paco. All rights reserved.</p>
 		<p>Contact: <a href="mailto:p2733836@my365.dmu.ac.uk">p2733836@my365.dmu.ac.uk</a></p>
 		</footer>
 	</div>
+
+	<!--script para el menu de inicio(tres rayas)-->
+	<script src="audio/script.js"></script> 
+
   </body>
 </html>
 

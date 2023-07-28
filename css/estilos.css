@@ -1,7 +1,7 @@
 /* css for index */
 .main1{
     position: absolute; /* If position = absoluto we can move anywhere in the window */
-    top: 15%; /*  This is the space between the css and the top of the window*/
+    top: 25%; /*  This is the space between the css and the top of the window*/
     left: 30%; /* And this the space of the left part of the window*/
 }
 .footer{
@@ -16,16 +16,18 @@
 
 /* css for choose players */
 .player1{
-    position: absolute;
-    top: 25%;
-    left: 15%;
+    position: absolute; /* al declarar posicion absoluta se puede poner el player1 en ciuquier parte de la ventana*/
+    top: 25%; /* distancia desde arriba de la ventana al player1*/
+    left: 15%; /* distancia desde la izquierda de la ventana al player1*/
 }
 .player2{
+    /* css igual que player1 pero poniendolo en distinto sitio de la ventana */
     position: absolute;
     top: 25%;
     left: 35%;
 }
 .player3{
+    /* css igual que player1 pero poniendolo en distinto sitio de la ventana */
     position: absolute;
     top: 25%;
     left: 55%;
@@ -34,55 +36,64 @@
 
 
 /* css for teams */
+/* aqui utilizo el mismo formato que players ya que necesito 
+poner cada contenedor en un sitio distinto de la imagen*/
 .lions_team{
     position: absolute;
     background-color: aliceblue;
     padding: 20px 20px;
     top: 25%;
-    left: 3%;
+    left: 20%;
 }
 .petrolero_team{
     position: absolute;
     background-color: antiquewhite;
     padding: 20px 20px;
     top: 25%;
-    left: 32%;
+    left: 52%;
 }
 .ahli_team{
     position: absolute;
     background-color: aqua;
     padding: 20px 20px;
-    top: 25%;
-    left: 65%;
+    top: 75%;
+    left: 35%;
 }
 
 .teams{
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 20%;
+    text-align: center;
+}
+
+.teams a{
+    margin-right: 80%;
 }
 
 /* css for skills */
+/* aqui utilizo el mismo formato que players ya que necesito 
+poner cada contenedor en un sitio distinto de la imagen*/
 .goalkeeper{
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 15%;
 }
 .intelligent{
     position: absolute;
     top: 30%;
-    left: 40%;
+    left: 45%;
 }
 .striker{
     position: absolute;
     top: 30%;
-    left: 75%;
+    left: 80%;
 }
 
 .button1{
     position: absolute;
     top: 45%;
-    left: 10%;
+    left: 20%;
 }
 .button2{
     position: absolute;
@@ -97,5 +108,121 @@
 .coach_button2{
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50%;
 }
+
+
+/*header*/
+header { 
+    overflow-x: hidden;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2% 0;
+}
+/*h1 solo el de dentro del header*/
+header h1 {
+    margin-left: 40%;
+    font-style: italic;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+
+/* para las tres lineas de menu*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*para cuando el menu este abierto*/
+nav ul li {
+    display: inline-block;
+    margin-left: 2%;
+}
+
+/*para cuando el menu este abierto el estilo de <a>*/
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 2% 4%;
+}
+
+/*cuando el raton este encima de <a>*/
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* colocar las lineas*/
+.menubar {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  /* estilo de las tres lineas*/
+  .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* cuando el menu este cerrado y abierto */
+  .menubar::before,
+  .menubar::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .menubar::before {
+    top: 0;
+  }
+  
+  /* Estilos para el contenedor del menú */
+  .menu-container {
+    position: relative;
+  }
+  
+  /* Estilos para el menú desplegable */
+  .menu {
+    position: absolute;
+    top: 0;
+    left: -200px; /* Inicialmente, el menú estará oculto fuera del lateral izquierdo */
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(158, 28, 28);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  /* Estilos para mostrar el menú */
+  .menu.show {
+    left: 0;
+    height: 100%;
+    background-color: rgb(145, 30, 30);
+  }
+
+  .menu li{
+    font-style: italic;
+    font-size: 18px;
+    padding: 30px;
+  }

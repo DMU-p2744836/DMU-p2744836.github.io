@@ -13,14 +13,38 @@
 	</style>
   </head>
   <body>
-	<a href="../index.html"><h1>Football stars</h1></a>
+	<header>
+
+		<nav>
+			<h1>Football stars</h1>
+		 
+			<ul>
+			  <li class="dropdown">
+				<span class="menubar" onclick="openMenu()">
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				</span>
+				<ul class="menu" id="menu">
+				  <li><a style="font-size: 30px;" onclick="closeMenu()">x</a></li><br>
+				  <li><a href="../index.html" onclick="closeMenu()">INICIO</a></li><br>
+				  <li><a href="players.html" onclick="closeMenu()">PLAYERS</a></li><br>
+				  <li><a href="teams.html" onclick="closeMenu()">TEAMS</a></li><br>
+				  <li><a href="https://github.com/DMU-p2744836/PACOS-WORK" onclick="closeMenu()">MY WORK</a></li><br>
+				</ul>
+			  </li>
+			</ul>
+		</nav>
+
+	  </header>
 	<br><br>
 	<div class="teams">
-		<h1 style="margin-left: 250px;">THE LION</h1>
+		<h1>THE LION</h1>
 		<p>Very good option, you are competitive and you go for everything, <br>you will start on the bench and little by little you will enter the eleven until you become a star.</p>
 		<br><br>
-		<p style="margin-left: 250px;">Click your team!</p>
+		<p>Click your team!</p>
 		<a href="skills.html"><img src="../img/lions.jpeg"></a>
 	</div>
+	<script src="../audio/script.js"></script>
   </body>
 </html>

@@ -13,14 +13,38 @@
 	</style>
   </head>
   <body>
-	<a href="../index.html"><h1>Football stars</h1></a>
+	<header>
+
+		<nav>
+			<h1>Football stars</h1>
+		 
+			<ul>
+			  <li class="dropdown">
+				<span class="menubar" onclick="openMenu()">
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				  <div class="bar"></div>
+				</span>
+				<ul class="menu" id="menu">
+				  <li><a style="font-size: 30px;" onclick="closeMenu()">x</a></li><br>
+				  <li><a href="../index.html" onclick="closeMenu()">INICIO</a></li><br>
+				  <li><a href="players.html" onclick="closeMenu()">PLAYERS</a></li><br>
+				  <li><a href="teams.html" onclick="closeMenu()">TEAMS</a></li><br>
+				  <li><a href="https://github.com/DMU-p2744836/PACOS-WORK" onclick="closeMenu()">MY WORK</a></li><br>
+				</ul>
+			  </li>
+			</ul>
+		</nav>
+
+	  </header>
 	<br><br>
 	<div class="teams">
-		<h1 style="margin-left: 250px; font-style: italic;">AL-AHLI</h1>
+		<h1>AL-AHLI</h1>
 		<p>I am sorry ,you are out, you have sold yourself to the highest bidder, in this game we want footballers, not mercenaries.</p>
 		<br><br>
 		<img src="../img/ahli.jpg">
 		<a href="../index.html"><img src="../img/game_over.jpeg"></a>
 	</div>
+	<script src="../audio/script.js"></script>
   </body>
 </html>
