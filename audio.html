@@ -5,40 +5,47 @@
     <title>Audio de fondo</title>
 </head>
 <style>
+    /* CSS style for the body background color */
     body {
         background-color: black;
     }
+    /* CSS style for the play/pause button */
     button {
         position: absolute;
         top: 40%;
         left: 40%;
-		background-color: yellow;
-    	border: none;
-		padding: 10px 20px;
-		text-align: center;
-		font-size: 32px;
-		cursor: pointer;
+        background-color: yellow;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 32px;
+        cursor: pointer;
         border-end-end-radius: 40px;
     }
 </style>
 <body>
+    <!-- Audio element for background music -->
     <audio id="miAudio" loop>
         <source src="audio/audio.mp3" type="audio/mpeg">
     </audio>
 
+    <!-- Play/Pause button -->
     <button id="btnPlayPause">Reproducir</button>
 
     <script>
         window.onload = function() {
+            // Get the audio element and play/pause button by their IDs
             const audioElement = document.getElementById("miAudio");
             const btnPlayPause = document.getElementById("btnPlayPause");
 
-            // I put this function to change the button when detect click
+            // Function to change the button text and play/pause the audio on click
             btnPlayPause.addEventListener("click", function() {
                 if (audioElement.paused) {
+                    // If audio is paused, play it and change the button text to "Pausar"
                     audioElement.play();
                     btnPlayPause.textContent = "Pausar";
                 } else {
+                    // If audio is playing, pause it and change the button text to "Reproducir"
                     audioElement.pause();
                     btnPlayPause.textContent = "Reproducir";
                 }
@@ -47,4 +54,5 @@
     </script>
 </body>
 </html>
+
 

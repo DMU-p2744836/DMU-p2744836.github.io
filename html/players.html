@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta charset="UTF-8">
-	<title>PACOS WORK</title>
-	<link rel="stylesheet" href="../css/estilos.css">
-	<style>
-	  img {
-		height: 250px;
-		width: 250px;
-	  }
-	  button {
-		margin-left: 75px;
-		background-color: #2d3886;
-    	border: none;
-		padding: 20px 20px;
-		text-align: center;
-		font-size: 18px;
-		cursor: pointer;
-		border-radius: 160px;
-	  }
-	  a{
-		color: white;
-	  }
-	</style>
+    <meta charset="UTF-8">
+    <title>PACOS WORK</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+      /* CSS styles for images */
+      img {
+        height: 250px;
+        width: 250px;
+      }
+      /* CSS styles for buttons */
+      button {
+        margin-left: 75px;
+        background-color: #2d3886;
+        border: none;
+        padding: 20px 20px;
+        text-align: center;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 160px;
+      }
+      /* CSS styles for links */
+      a {
+        color: white;
+      }
+    </style>
   </head>
   <body>
-	<header>
+    <header>
+      <!-- Navigation menu -->
+      <nav>
+        <h1>Football stars</h1>
+        <ul>
+          <li class="dropdown">
+            <!-- Menu icon (three bars) -->
+            <span class="menubar" onclick="openMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </span>
+            <!-- Dropdown menu items -->
+            <ul class="menu" id="menu">
+              <li><a style="font-size: 30px;" onclick="closeMenu()">x</a></li><br>
+              <li><a href="../index.html" onclick="closeMenu()">INICIO</a></li><br>
+              <li><a href="players.html" onclick="closeMenu()">PLAYERS</a></li><br>
+              <li><a href="teams.html" onclick="closeMenu()">TEAMS</a></li><br>
+              <li><a href="https://github.com/DMU-p2744836/PACOS-WORK" onclick="closeMenu()">MY WORK</a></li><br>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-		<nav>
-			<h1>Football stars</h1>
-		 
-			<ul>
-			  <li class="dropdown">
-				<span class="menubar" onclick="openMenu()">
-				  <div class="bar"></div>
-				  <div class="bar"></div>
-				  <div class="bar"></div>
-				</span>
-				<ul class="menu" id="menu">
-				  <li><a style="font-size: 30px;" onclick="closeMenu()">x</a></li><br>
-				  <li><a href="../index.html" onclick="closeMenu()">INICIO</a></li><br>
-				  <li><a href="players.html" onclick="closeMenu()">PLAYERS</a></li><br>
-				  <li><a href="teams.html" onclick="closeMenu()">TEAMS</a></li><br>
-				  <li><a href="https://github.com/DMU-p2744836/PACOS-WORK" onclick="closeMenu()">MY WORK</a></li><br>
-				</ul>
-			  </li>
-			</ul>
-		</nav>
+    <br><br>
+    <!-- Player 1 information -->
+    <div class="player1">
+      <img src="../img/messi.webp">
+      <br><br>
+      <button><a href="teams.html">MESSI</a></button>
+    </div>
+    <!-- Player 2 information -->
+    <div class="player2">
+      <img src="../img/cristiano.png">
+      <br><br>
+      <button><a href="teams.html">CRISTIANO</a></button>
+    </div>
+    <!-- Player 3 information -->
+    <div class="player3">
+      <img src="../img/neymar.png">
+      <br><br>
+      <button><a href="teams.html">NEYMAR</a></button>
+    </div>
 
-	  </header>
-
-
-	<br><br>
-	<div class="player1">
-		<img src="../img/messi.webp">
-		<br><br>
-		<button><a href="teams.html">MESSI</a></button>
-	</div>
-	<div class="player2">
-		<img src="../img/cristiano.png">
-		<br><br>
-		<button><a href="teams.html">CRISTIANO</a></button>
-	</div>
-	<div class="player3">
-		<img src="../img/neymar.png">
-		<br><br>
-		<button><a href="teams.html">NEYMAR</a></button>
-	</div>
-
-	<script src="../audio/script.js"></script>
-
+    <!-- Script for menu functionality -->
+    <script src="../audio/script.js"></script>
   </body>
 </html>
+

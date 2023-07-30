@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta charset="UTF-8">
-	<title>PACOS WORK</title>
-	<script src="audio/script.js"></script>
-	<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <title>PACOS WORK</title>
+    <script src="audio/script.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
   <style>
-	button {
-		margin-left: 25%;
-		background-color: #c98a30; /* background color */
-	    color: rgb(232, 210, 210); /* text color */
-    	border: none; /* get out border */
-		padding: 20px 30px; /* Espaciado interno */
-		text-align: center; /* text align */
-		font-size: 30px; /* text size */
-		cursor: pointer; /* Change the cursor in the button */
-		border-radius: 6px; /* Rounded corners */
-	  }
-	  p {
-		margin-left: 35%;
-	  }
+    /* CSS styles for the button */
+    button {
+      margin-left: 25%;
+      background-color: #c98a30; /* background color */
+      color: rgb(232, 210, 210); /* text color */
+      border: none; /* remove border */
+      padding: 20px 30px; /* internal spacing */
+      text-align: center; /* text align */
+      font-size: 30px; /* text size */
+      cursor: pointer; /* Change the cursor in the button */
+      border-radius: 6px; /* Rounded corners */
+    }
+    /* CSS styles for the paragraph */
+    p {
+      margin-left: 35%;
+    }
   </style>
   <body>
-	<header>
+    <header>
+      <!-- I have inserted this entire header in each file
+      to have a dropdown menu with utilities within the web page -->
+      <nav>
+        <h1>Football stars</h1>
+        <ul>
+          <li class="dropdown">
+            <!-- These are the three menu bars -->
+            <span class="menubar" onclick="openMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </span>
+            <!-- When you click the three bars, the menu will open, and the following items will appear -->
+            <ul class="menu show" id="menu">
+              <li><a style="font-size: 30px;" onclick="closeMenu()">x</a></li><br>
+              <li><a href="html/players.html" onclick="closeMenu()">PLAYERS</a></li><br>
+              <li><a href="html/teams.html" onclick="closeMenu()">TEAMS</a></li><br>
+              <li><a href="https://github.com/DMU-p2744836/PACOS-WORK" onclick="closeMenu()">MY WORK</a></li><br>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <br><br>
+    <!-- This button opens a new window with a button to start the audio -->
+    <button style="margin-left: 80%; font-size: 18px;" onclick="abrirVentanaAudio()">Open audio</button>
+    <div class="main1">
+      <img src="img/balon.jpg">
+      <br><br>
+      <button type="button"><a href="html/players.html">START GAME</a></button>
+    </div>
+    
+    <div class="footer" id="footer">
+      <footer>
+        <p>&copy; 2023 Paco. All rights reserved.</p>
+        <p>Contact: <a href="mailto:p2733836@my365.dmu.ac.uk">p2733836@my365.dmu.ac.uk</a></p>
+      </footer>
+    </div>
 
-		<!-- He insertado todo este header en cada archivo
-		para tener un menu desplegable con utilidades dentro de la pagina web -->
-		<nav>
-			<h1>Football stars</h1>
-		 
-			<ul>
-			  <li class="dropdown">
-				<!-- Estas son las tres barras de menu-->
-				<span class="menubar" onclick="openMenu()">
-				  <div class="bar"></div>
-				  <div class="bar"></div>
-				  <div class="bar"></div>
-				</span>
-				<!-- Cuando pulses las tres barras el menu se abrira y aparecera esto -->
-				<ul class="menu show" id="menu">
-				  <li><a style="font-size: 30px;" onclick="closeMenu()">x</a></li><br>
-				  <li><a href="html/players.html" onclick="closeMenu()">PLAYERS</a></li><br>
-				  <li><a href="html/teams.html" onclick="closeMenu()">TEAMS</a></li><br>
-				  <li><a href="https://github.com/DMU-p2744836/PACOS-WORK" onclick="closeMenu()">MY WORK</a></li><br>
-				</ul>
-			  </li>
-			</ul>
-		</nav>
-
-	  </header>
-	<br><br>
-	<!-- este boton abre una ventana nueva con un pulsador para iniciar el audio -->
-	<button style="margin-left: 80%; font-size: 18px;" onclick="abrirVentanaAudio()">Open audio</button>
-	<div class="main1">
-		<img src="img/balon.jpg">
-		<br><br>
-		<button  type="button"><a href="html/players.html">START GAME</a></button>
-	</div>
-	
-	<div class="footer" id="footer">
-		<footer>
-		<p>&copy; 2023 Paco. All rights reserved.</p>
-		<p>Contact: <a href="mailto:p2733836@my365.dmu.ac.uk">p2733836@my365.dmu.ac.uk</a></p>
-		</footer>
-	</div>
-
-	<!--script para el menu de inicio(tres rayas)-->
-	<script src="audio/script.js"></script> 
-
+    <!-- Script for the start menu (three lines) -->
+    <script src="audio/script.js"></script> 
   </body>
 </html>
-
